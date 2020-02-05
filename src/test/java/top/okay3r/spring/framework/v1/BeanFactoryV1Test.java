@@ -21,7 +21,7 @@ public class BeanFactoryV1Test {
     public void test() {
         UserService userService = (UserService) beanFactoryV1.getBean("userService");
         User user = new User();
-        user.setUsername("李逵");
+        user.setUsername("赵云");
         List<User> userList = userService.queryUserList(user);
         for (User u : userList) {
             System.out.println(u);

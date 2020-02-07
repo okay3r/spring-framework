@@ -1,4 +1,4 @@
-package top.okay3r.spring.framework.pjc.pojo;
+package top.okay3r.spring.framework.test.pjc.pojo;
 
 import java.util.Date;
 

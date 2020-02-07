@@ -4,10 +4,10 @@ import org.dom4j.Document;
 import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
-import top.okay3r.spring.framework.ioc.BeanDefinition;
-import top.okay3r.spring.framework.ioc.PropertyValue;
-import top.okay3r.spring.framework.ioc.RuntimeBeanReference;
-import top.okay3r.spring.framework.ioc.TypedStringValue;
+import top.okay3r.spring.framework.beandefinition.BeanDefinition;
+import top.okay3r.spring.framework.beandefinition.PropertyValue;
+import top.okay3r.spring.framework.beandefinition.RuntimeBeanReference;
+import top.okay3r.spring.framework.beandefinition.TypedStringValue;
 
 import java.io.InputStream;
 import java.lang.reflect.Field;

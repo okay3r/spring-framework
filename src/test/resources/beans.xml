@@ -1,12 +1,12 @@
 <beans>
 	<bean id="userService"
-		class="top.okay3r.spring.framework.pjc.service.UserServiceImpl">
+		class="top.okay3r.spring.framework.test.pjc.service.UserServiceImpl">
 		<!-- 引用类型 -->
 		<property name="userDao" ref="userDao"></property>
 	</bean>
 
 	<!-- 该类有一个初始化方法 -->
-	<bean id="userDao" class="top.okay3r.spring.framework.pjc.dao.UserDaoImpl"
+	<bean id="userDao" class="top.okay3r.spring.framework.test.pjc.dao.UserDaoImpl"
 		init-method="init">
 		<property name="dataSource" ref="dataSource"></property>
 	</bean>

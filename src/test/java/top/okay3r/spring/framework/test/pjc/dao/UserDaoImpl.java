@@ -1,7 +1,7 @@
-package top.okay3r.spring.framework.pjc.dao;
+package top.okay3r.spring.framework.test.pjc.dao;
 
 import org.apache.commons.dbcp.BasicDataSource;
-import top.okay3r.spring.framework.pjc.pojo.User;
+import top.okay3r.spring.framework.test.pjc.pojo.User;
 
 import javax.sql.DataSource;
 import java.io.IOException;

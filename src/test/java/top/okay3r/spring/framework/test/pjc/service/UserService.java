@@ -1,6 +1,6 @@
-package top.okay3r.spring.framework.pjc.service;
+package top.okay3r.spring.framework.test.pjc.service;
 
-import top.okay3r.spring.framework.pjc.pojo.User;
+import top.okay3r.spring.framework.test.pjc.pojo.User;
 
 import java.util.List;
 

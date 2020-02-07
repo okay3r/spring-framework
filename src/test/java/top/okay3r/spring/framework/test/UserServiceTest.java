@@ -1,9 +1,9 @@
-package top.okay3r.spring.test;
+package top.okay3r.spring.framework.test;
 
 import org.junit.Test;
-import top.okay3r.spring.framework.pjc.dao.UserDaoImpl;
-import top.okay3r.spring.framework.pjc.pojo.User;
-import top.okay3r.spring.framework.pjc.service.UserServiceImpl;
+import top.okay3r.spring.framework.test.pjc.dao.UserDaoImpl;
+import top.okay3r.spring.framework.test.pjc.pojo.User;
+import top.okay3r.spring.framework.test.pjc.service.UserServiceImpl;
 
 import java.util.List;
 

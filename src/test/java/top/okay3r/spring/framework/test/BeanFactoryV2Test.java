@@ -23,9 +23,12 @@ public class BeanFactoryV2Test {
     public void test() {
         Resource resource = new ClasspathResource("beans.xml");
         InputStream inputStream = resource.getResource();
+
         DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
+
         XmlBeanDefinitionReader xmlBeanDefinitionReader = new XmlBeanDefinitionReader(beanFactory);
         xmlBeanDefinitionReader.loadBeanDefinitions(inputStream);
+        
         UserService userService = (UserService) beanFactory.getBean("userService");
         User user = new User();
         user.setUsername("李逵");

@@ -25,5 +25,6 @@ public class XmlBeanDefinitionReader {
         XmlBeanDefinitionDocumentReader xmlBeanDefinitionDocumentReader =
                 new XmlBeanDefinitionDocumentReader(beanDefinitionRegistry);
         xmlBeanDefinitionDocumentReader.registerBeanDefinitions(document.getRootElement());
+
     }
 }

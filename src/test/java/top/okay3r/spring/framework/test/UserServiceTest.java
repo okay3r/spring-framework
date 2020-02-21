@@ -9,7 +9,7 @@ import java.util.List;
 
 public class UserServiceTest {
 
-    @Test
+   /* @Test
     public void queryUserList() {
         UserDaoImpl userDao = new UserDaoImpl();
         userDao.init();
@@ -19,5 +19,5 @@ public class UserServiceTest {
         for (User user : userList) {
             System.out.println(user);
         }
-    }
+    }*/
 }

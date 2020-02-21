@@ -18,8 +18,9 @@ import java.util.List;
  * Time: 12:19
  * Explain:
  */
+
 public class BeanFactoryV2Test {
-    @Test
+   /* @Test
     public void test() {
         Resource resource = new ClasspathResource("beans.xml");
         InputStream inputStream = resource.getResource();
@@ -36,5 +37,5 @@ public class BeanFactoryV2Test {
         for (User u : userList) {
             System.out.println(u);
         }
-    }
+    }*/
 }

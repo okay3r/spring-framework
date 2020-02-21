@@ -1,5 +1,7 @@
 package top.okay3r.spring.framework.bean.factory;
 
+import java.util.List;
+
 /**
  * Created By okay3r.top
  * Author: okay3r
@@ -8,4 +10,5 @@ package top.okay3r.spring.framework.bean.factory;
  * Explain:
  */
 public interface ListableBeanFactory {
+    <T> List<T> getBeansByType(Class<T> clazz);
 }

@@ -1,5 +1,7 @@
 package top.okay3r.spring.framework.bean.factory.support;
 
+import top.okay3r.spring.framework.bean.aware.Aware;
+import top.okay3r.spring.framework.bean.aware.BeanFactoryAware;
 import top.okay3r.spring.framework.bean.factory.AutowireCapableBeanFactory;
 import top.okay3r.spring.framework.beandefinition.BeanDefinition;
 import top.okay3r.spring.framework.beandefinition.PropertyValue;
@@ -28,8 +30,20 @@ public abstract class AbstractAutowireCapableBeanFactory extends AbstractBeanFac
 
         //将属性值等信息填充到bean中，在此之前该bean是空的，即没有设置任何的属性的值等
         populateBean(bean, beanDefinition);
-        initMethod(bean, beanDefinition);
+        initBean(bean, beanDefinition);
         return bean;
+    }
+
+    private void initBean(Object bean, BeanDefinition beanDefinition) {
+        // TODO Aware接口会在此时被处理
+        if (bean instanceof Aware) {
+            if (bean instanceof BeanFactoryAware) {
+                ((BeanFactoryAware) bean).setBeanFactory((DefaultListableBeanFactory) this);
+            }
+            //.....
+        }
+
+        initMethod(bean, beanDefinition);
     }
 
     //通过反射调用bean的初始化方法
